@@ -18,7 +18,7 @@ WiFiServer server(80);
 
 Servo servomotor; // Cria objeto para controlar o servo
 int Abertura = 180;
-int Fechamento = 0;
+int Fechamento = 46;
 int UltimoEstado = 0;
 int servoPin = 13; // Especifica o pino usado para controlar o servo
 int botaoPin = 5; // Variável para armazenar o valor lido do potenciometro
@@ -81,7 +81,28 @@ void loop(){
             client.println();
 
             // the content of the HTTP response follows the header:
-            client.print("Clique <a href=\"/alimentar\">aqui</a> para alimentar seu pet :)<br>");
+            client.println("<!DOCTYPE html><html>");
+            client.println("<head>");
+            client.println("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">");
+            client.println("<link rel=\"icon\" type=\"image/x-icon\" href=\"/https://raw.githubusercontent.com/antoniocristovam/projetoiot/main/cool.ico\">");
+            client.println("<title>Automatic Feeder</title>");
+            client.println("<link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor\" crossorigin=\"anonymous\">");
+            client.println("<style>");
+            client.println("@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');");
+            client.println("body {background: var(--bs-body-bg);}");
+            client.println("p {font-size: 22px;font-family: 'Poppins', sans-serif;font-weight: 600;}");
+            client.println("a {margin: 1rem;padding: 0.7rem 1rem;}");
+            client.println(".navbar-brand {margin: 5px;font-size: 22px;font-family: 'Poppins', sans-serif;font-weight: 500;}");
+            client.println(".center {width: 400px;height: 200px;text-align: center;position: absolute;bottom: 0;right: 0;left: 0;top: 0;margin: auto;}");
+            client.println(".img-pet {-webkit-transition: -webkit-transform .5s ease;transition: transform .5s ease;margin-top: 15px;}");
+            client.println(".img-pet:hover {-webkit-transform: scale(1.1);transform: scale(1.1);}");
+            client.println("footer {font-family: 'Poppins', sans-serif;font-weight: 600;font-size: 15px;text-align: center;width: 100%;position: absolute;bottom: 0;left: 0;}");
+            client.println("</style>");
+            client.println("</head><body>");
+            client.println("<nav class=\"navbar bg-light\"><div class=\"container-fluid\"><a class=\"navbar-brand\" href=\"index.html\"><img src=\"https://github.com/antoniocristovam/projetoiot/blob/main/cool.png?raw=true\" width=\"32\" height=\"32\" class=\"d-inline-block align-text-top\">Automatic Feeder</a></div></nav>");
+            client.println("<div class=\"center\"><p>Clique no PET para Alimentar</p><a href=\"http://192.168.43.79/alimentar\"><img class=\"img-pet\" width=\"160px\" src=\"https://github.com/antoniocristovam/projetoiot/blob/main/cool.png?raw=true\"</a></a></div>");
+            client.println("<footer>Todos os Direitos Reservador &copy;Automatic Feeder <img height=\"12px\" src=\"https://raw.githubusercontent.com/antoniocristovam/projetoiot/main/cool.ico\"></footer>");
+            client.println("</body></html>");
 
             // The HTTP response ends with another blank line:
             client.println();
@@ -110,9 +131,9 @@ void servo_wifi() {
   if (digitalRead(botaoPin) == HIGH && UltimoEstado == 0){
     servomotor.write(Abertura);
     UltimoEstado = 1;
-    delay(1000);
+    delay(500);
     servomotor.write(Fechamento);
     UltimoEstado = 0;
-    delay(1000);
+    delay(500);
   }
 }
