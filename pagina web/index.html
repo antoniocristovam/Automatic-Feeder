@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/cool.ico">
+    <title>Automatic Feeder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body {
+    background: var(--bs-body-bg);
+}
+
+p {
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+a {
+    margin: 1rem;
+    padding: 0.7rem 1rem;
+}
+
+.navbar-brand {
+    margin: 5px;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.center {
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+}
+
+.img-pet {
+   -webkit-transition: -webkit-transform .5s ease;
+   transition: transform .5s ease;
+   margin-top: 15px;
+}
+
+.img-pet:hover {
+    -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="cool.png" alt="" width="32" height="32" class="d-inline-block align-text-top">
+            Automatic Feeder
+          </a>
+        </div>
+    </nav>
+
+    <div class="center">
+        <p>🐶 Clique no PET para Alimentar 🐶</p>
+        <a href=""><a href="http://192.168.43.79/alimentar"><img class="img-pet" width="160px" src="cool.png" alt="pet-alimentar"></a></a> 
+    </div>
+
+    <footer>Todos os Direitos Reservador &copy;Automatic Feeder <img width="" height="12px" src="cool.ico" alt=""></footer>
+</body>
+</html>
