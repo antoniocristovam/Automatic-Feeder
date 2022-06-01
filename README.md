@@ -29,3 +29,9 @@
 <p align="center">
  <img align="center" alt="option" src="https://github.com/luisfelipe03/Automatic-Feeder/blob/master/img/ezgif.com-gif-maker.gif?raw=true" />
  </p>
+ 
+ Todos os codigos e comentarios são de aoutoria de :
+ 
+ * [Antônio Cristovam](https://www.github.com/antoniocristovam)
+ * [Geyzon Costa](https://www.github.com/GeyzonErik)
+ * [Luis Felipe](https://www.github.com/luisfelipe03)
