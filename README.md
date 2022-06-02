@@ -5,9 +5,11 @@
 ### Sobre o projeto
 ![Badge em Concluido](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=dark&style=for-the-badge)
 
-É um projeto simples com um objetivo simples, colocar ração para o seu pet remotamente pelo celular.
+É um projeto simples, mas bem eficiente, cujo objetivo é distribuir o alimento para o seu animal de estimação remotamente utilizando seu smartphone, tablet ou computador.
 
-### Materiais eletronicos usados 
+<img align="center" alt="option" src="https://github.com/luisfelipe03/Automatic-Feeder/blob/master/img/dispositivos-compativeis.jpg?raw=true" />
+
+### Materiais eletrônicos utilizado para fazer o projeto:  
 
 * ESP32
 * Servo motor
