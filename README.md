@@ -1,5 +1,5 @@
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Logo](https://github.com/luisfelipe03/Automatic-Feeder/blob/master/img/icon-git.png?raw=true)
 
 
 ### Sobre o projeto
@@ -21,9 +21,10 @@
 * 1 Pote para a ração
 * 1 garrafa ou cano de pvc para guardar a ração
 
-<p>
- <img align="center" alt="option" height="350" width="275" src="https://github.com/luisfelipe03/Automatic-Feeder/blob/master/img/WhatsApp%20Image%202022-05-31%20at%2012.32.25.jpeg?raw=true" />
- </p>
+### Imagens do Projeto:
+
+<img align="center" alt="option" src="https://github.com/luisfelipe03/Automatic-Feeder/blob/master/img/projetofim2.jpg?raw=true" />
+<img align="center" alt="option" src="https://github.com/luisfelipe03/Automatic-Feeder/blob/master/img/projetofim1.jpg?raw=true" />
  
 ## Demo
 
@@ -36,3 +37,5 @@
  * [Antônio Cristovam](https://www.github.com/antoniocristovam)
  * [Geyzon Costa](https://www.github.com/GeyzonErik)
  * [Luis Felipe](https://www.github.com/luisfelipe03)
+
+<img align="center" alt="option" src="https://github.com/luisfelipe03/Automatic-Feeder/blob/master/img/background.jpg?raw=true" />
